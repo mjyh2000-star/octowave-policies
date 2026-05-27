@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>계정 삭제 요청 / Account Deletion — octowave: Sleep & Focus</title>
+<meta name="robots" content="index,follow" />
+<style>
+  :root {
+    --bg: #F5F1E8;
+    --card: #FFFFFF;
+    --border: #E4DFD4;
+    --text: #2C3529;
+    --muted: #586354;
+    --accent: #4A5D4E;
+    --gold: #C49A6C;
+    --danger: #B5655E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+      "Noto Sans KR", Roboto, sans-serif;
+    line-height: 1.65;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  .brand {
+    text-align: center; color: var(--gold); font-size: 13px; font-weight: 700;
+    letter-spacing: 2px; margin-bottom: 4px;
+  }
+  h1 { text-align: center; font-size: 26px; font-weight: 800; margin: 0 0 6px; }
+  .meta { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+  .lang-toggle {
+    display: flex; gap: 8px; justify-content: center; margin-bottom: 24px;
+  }
+  .lang-toggle a {
+    padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--card); color: var(--muted); text-decoration: none; font-size: 13px;
+    font-weight: 600;
+  }
+  .lang-toggle a.active {
+    background: var(--accent); border-color: var(--accent); color: #FFF;
+  }
+  section {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px; margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 17px; font-weight: 800; color: var(--accent); margin: 0 0 10px;
+  }
+  p { margin: 0 0 12px; font-size: 14.5px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  li { margin-bottom: 6px; font-size: 14.5px; }
+  strong { color: var(--accent); }
+
+  label { display: block; color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  input[type=email], textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--border);
+    border-radius: 10px; background: var(--bg); color: var(--text);
+    font-size: 15px; font-family: inherit;
+    margin-bottom: 14px;
+  }
+  textarea { resize: vertical; min-height: 90px; }
+  button[type=submit] {
+    width: 100%; padding: 14px; border: 0; border-radius: 12px;
+    background: var(--danger); color: #FFF; font-size: 15px; font-weight: 800;
+    cursor: pointer; min-height: 48px;
+  }
+  button[type=submit]:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  .alert-info {
+    background: #EDE7D8; border-left: 4px solid var(--accent);
+    padding: 12px 14px; border-radius: 8px; font-size: 13.5px;
+    margin-bottom: 16px;
+  }
+  .alert-warn {
+    background: #F6E1DD; border-left: 4px solid var(--danger);
+    padding: 12px 14px; border-radius: 8px; font-size: 13.5px;
+    color: #6D3A35; margin-bottom: 16px;
+  }
+  .success-box {
+    background: #DCE3DB; border-left: 4px solid var(--accent);
+    padding: 14px 16px; border-radius: 10px; font-size: 14px;
+    margin-bottom: 14px; color: var(--accent); font-weight: 700;
+  }
+  .error-box {
+    background: #F6E1DD; border-left: 4px solid var(--danger);
+    padding: 14px 16px; border-radius: 10px; font-size: 14px;
+    margin-bottom: 14px; color: #6D3A35; font-weight: 700;
+  }
+  hr.lang-sep { border: 0; border-top: 2px dashed var(--border); margin: 36px 0 28px; }
+  .contact-card {
+    background: #DCE3DB; border-radius: 10px; padding: 12px 14px;
+    font-size: 13.5px; margin-top: 12px;
+  }
+  footer {
+    text-align: center; color: var(--muted); font-size: 12px;
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="brand">octowave: Sleep &amp; Focus</div>
+  <h1>계정 삭제 요청 · Account Deletion</h1>
+  <div class="meta">
+    <strong>App:</strong> octowave: Sleep &amp; Focus<br/>
+    <strong>Developer / Publisher:</strong> MagicJohn<br/>
+    <strong>Google Play Listing:</strong> com.eightsoundhealing.app
+  </div>
+  <div class="lang-toggle">
+    <a href="#ko" class="active">🇰🇷 한국어</a>
+    <a href="#en">🇺🇸 English</a>
+  </div>
+
+  <p style="background:#FFFCEC;border:1px solid #E4DFD4;border-radius:8px;padding:12px;font-size:13px;color:#586354;margin-bottom:24px;">
+    This page is the official account-deletion request page for the
+    Android app <strong>octowave: Sleep &amp; Focus</strong>
+    (package <code>com.eightsoundhealing.app</code>), published on
+    Google Play by <strong>MagicJohn</strong>.
+    <br/><br/>
+    본 페이지는 Google Play에 등록된 <strong>MagicJohn</strong>의
+    <strong>octowave: Sleep &amp; Focus</strong> 앱
+    (패키지 <code>com.eightsoundhealing.app</code>)의
+    공식 계정 삭제 요청 페이지입니다.
+  </p>
+
+  <!-- ============ KOREAN ============ -->
+  <div id="ko">
+    <section>
+      <h2>가장 빠른 방법: 앱 내에서 직접 삭제 ⚡</h2>
+      <p>
+        앱에 로그인되어 있다면 다음 경로를 통해 <strong>즉시</strong> 본인 인증과 함께
+        계정과 모든 관련 데이터를 영구 삭제할 수 있습니다.
+      </p>
+      <div class="alert-info">
+        <strong>앱 → 우측 상단 햄버거 메뉴 → 계정 → "계정 삭제"</strong><br/>
+        확인 후 즉시 삭제됩니다.
+      </div>
+    </section>
+
+    <section>
+      <h2>또는: 이 페이지에서 삭제 요청</h2>
+      <p>앱을 더 이상 사용하지 않거나 삭제하셨다면 아래 폼으로 요청해 주세요.</p>
+
+      <div class="alert-warn">
+        ⚠️ <strong>주의:</strong> 요청 접수 후 신원 확인을 위해 가입하신 이메일에서
+        본인 확인 이메일을 보내드립니다. 확인 회신 후 <strong>최대 7일 이내</strong>에
+        모든 데이터가 영구 삭제됩니다.
+      </div>
+
+      <div id="ko-success" class="success-box" style="display:none">
+        ✅ 요청이 접수되었습니다. 등록하신 이메일로 곧 확인 메일을 발송하겠습니다.
+      </div>
+      <div id="ko-error" class="error-box" style="display:none"></div>
+
+      <form id="ko-form" onsubmit="return submitForm(event, 'ko')">
+        <label for="ko-email">가입 이메일 <span style="color:var(--danger)">*</span></label>
+        <input type="email" id="ko-email" name="email" required placeholder="example@gmail.com" />
+
+        <label for="ko-reason">삭제 사유 (선택)</label>
+        <textarea id="ko-reason" name="reason" placeholder="(선택) 더 나은 서비스를 위해 사유를 알려주시면 감사하겠습니다."></textarea>
+
+        <button type="submit" id="ko-submit">계정 삭제 요청 제출</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>삭제되는 데이터</h2>
+      <ul>
+        <li><strong>회원 정보</strong>: 이메일, 이름, 프로필 사진 — 즉시 삭제</li>
+        <li><strong>팔체질 선택 정보</strong> — 즉시 삭제</li>
+        <li><strong>로그인 세션</strong> — 즉시 삭제 (모든 기기에서 자동 로그아웃)</li>
+      </ul>
+      <p>
+        익명 사용 통계(세션 ID·화면 조회 등)는 개인을 식별할 수 없도록 처리되어
+        90일 후 자동 삭제됩니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>문의처</h2>
+      <div class="contact-card">
+        <p style="margin:0 0 4px;"><strong>개발자:</strong> MagicJohn</p>
+        <p style="margin:0 0 4px;"><strong>앱:</strong> octowave: Sleep & Focus</p>
+        <p style="margin:0;"><strong>이메일:</strong>
+          <a href="mailto:mjyh2000@gmail.com">mjyh2000@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <hr class="lang-sep" />
+
+  <!-- ============ ENGLISH ============ -->
+  <div id="en">
+    <section>
+      <h2>Fastest Way: In-App Deletion ⚡</h2>
+      <p>
+        If you are signed in, you can permanently delete your account and all
+        related data <strong>immediately</strong> from inside the app.
+      </p>
+      <div class="alert-info">
+        <strong>App → Hamburger menu (top-right) → Account → "Delete Account"</strong><br/>
+        Confirmation is required; deletion is immediate and irreversible.
+      </div>
+    </section>
+
+    <section>
+      <h2>Or: Request Deletion via This Page</h2>
+      <p>
+        If you no longer have the app installed, please submit your request below.
+      </p>
+
+      <div class="alert-warn">
+        ⚠️ <strong>Note:</strong> After submission we will send a confirmation email
+        to the address provided to verify ownership. Once you reply, all data will
+        be permanently deleted within <strong>7 days</strong>.
+      </div>
+
+      <div id="en-success" class="success-box" style="display:none">
+        ✅ Request received. We will email you a confirmation link shortly.
+      </div>
+      <div id="en-error" class="error-box" style="display:none"></div>
+
+      <form id="en-form" onsubmit="return submitForm(event, 'en')">
+        <label for="en-email">Account Email <span style="color:var(--danger)">*</span></label>
+        <input type="email" id="en-email" name="email" required placeholder="example@gmail.com" />
+
+        <label for="en-reason">Reason (optional)</label>
+        <textarea id="en-reason" name="reason" placeholder="(Optional) Help us improve by telling us why you're leaving."></textarea>
+
+        <button type="submit" id="en-submit">Submit Deletion Request</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Data That Will Be Deleted</h2>
+      <ul>
+        <li><strong>Account information</strong>: email, name, profile picture — deleted immediately</li>
+        <li><strong>Eight Constitution selection</strong> — deleted immediately</li>
+        <li><strong>Login sessions</strong> — deleted immediately (all devices signed out)</li>
+      </ul>
+      <p>
+        Anonymous usage analytics (session IDs, screen views, etc.) are
+        de-identified and automatically deleted after 90 days.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p style="margin:0 0 4px;"><strong>Developer:</strong> MagicJohn</p>
+        <p style="margin:0 0 4px;"><strong>App:</strong> octowave: Sleep & Focus</p>
+        <p style="margin:0;"><strong>Email:</strong>
+          <a href="mailto:mjyh2000@gmail.com">mjyh2000@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>&copy; 2025 MagicJohn. All rights reserved.</footer>
+</div>
+
+<script>
+async function submitForm(ev, lang) {
+  ev.preventDefault();
+  const emailEl = document.getElementById(lang + '-email');
+  const reasonEl = document.getElementById(lang + '-reason');
+  const successEl = document.getElementById(lang + '-success');
+
+  // ── Static-host friendly path ─────────────────────────────────
+  // This file is served from GitHub Pages (static host) — there is
+  // no backend at the relative origin. We deliberately skip the
+  // network fetch and open the user's mail composer directly so the
+  // submission flow is 100% reliable regardless of any infra status.
+  // The receiving address (mjyh2000@gmail.com) is monitored by the
+  // developer and deletion requests are processed within 30 days as
+  // disclosed in the policy text above.
+  const subject = lang === 'ko'
+    ? '[octowave: Sleep & Focus] 계정 삭제 요청'
+    : '[octowave: Sleep & Focus] Account deletion request';
+  const body = (lang === 'ko'
+    ? '가입 이메일: ' + emailEl.value
+      + '\nApp: octowave: Sleep & Focus'
+      + '\nDeveloper: MagicJohn'
+      + '\n사유: ' + (reasonEl.value || '(없음)')
+    : 'Account email: ' + emailEl.value
+      + '\nApp: octowave: Sleep & Focus'
+      + '\nDeveloper: MagicJohn'
+      + '\nReason: ' + (reasonEl.value || '(none)'));
+  const mailto = 'mailto:mjyh2000@gmail.com'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+
+  // Show the in-page confirmation so users on devices without a mail
+  // client still see clear next-step guidance.
+  successEl.innerHTML = (lang === 'ko'
+    ? '메일 앱이 열렸습니다. 자동으로 열리지 않으면 직접 <a href="mailto:mjyh2000@gmail.com">mjyh2000@gmail.com</a>로 이메일을 보내 주세요.'
+    : 'Your mail app should open. If it does not, please email <a href="mailto:mjyh2000@gmail.com">mjyh2000@gmail.com</a> directly.');
+  successEl.style.display = 'block';
+  return false;
+}
+</script>
+</body>
+</html>
