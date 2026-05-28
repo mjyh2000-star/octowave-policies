@@ -156,6 +156,29 @@
         <li>이용자는 언제든지 수면 기록을 삭제할 수 있으며, 마이크 권한을
             기기 설정에서 회수할 수 있습니다.</li>
       </ul>
+
+      <h3>바. 코골이 클립 녹음 (선택, 기본값 비활성화)</h3>
+      <ul>
+        <li><strong>저장 위치</strong>: 사용자가 설정 화면에서 "코골이 클립 녹음"을
+            명시적으로 활성화한 경우에만 작동합니다. 감지된 코골이 및 잠꼬대
+            구간의 짧은 오디오 클립이 <strong>사용자 본인의 기기에만</strong>
+            저장됩니다.</li>
+        <li><strong>서버 전송 없음</strong>: 이 오디오 클립은 어떠한 형태로도
+            외부 서버, 클라우드, 또는 제3자에게 전송되지 않습니다. 클립 메타데이터
+            (저장 경로 등)만 서비스 동기화를 위해 저장되며 파일 자체는 기기에만
+            존재합니다.</li>
+        <li><strong>저장 범위</strong>: 코골이/잠꼬대로 분류된 구간만 약 10초씩
+            저장됩니다. 수면 시간 전체가 녹음되는 것이 아닙니다.</li>
+        <li><strong>자동 삭제</strong>: 이용자는 보존 기간을 7일, 30일(기본값),
+            또는 무기한 중에서 선택할 수 있습니다. 만료된 클립은 다음 수면 추적
+            시작 시 자동으로 삭제됩니다.</li>
+        <li><strong>수동 삭제 및 공유</strong>: 각 클립은 음향 이벤트 페이지에서
+            개별적으로 삭제하거나 외부 앱(메일, 메신저 등)으로 공유할 수
+            있습니다. 공유는 사용자의 명시적 액션이 있을 때만 수행됩니다.</li>
+        <li><strong>비활성화</strong>: 설정 화면에서 토글을 끄면 새 클립은 더
+            이상 저장되지 않습니다. 기존 클립은 사용자가 직접 삭제하기 전까지
+            유지되거나 자동 삭제 기간에 따라 정리됩니다.</li>
+      </ul>
     </section>
 
     <section>
@@ -310,6 +333,30 @@
             sound recommendations.</li>
         <li>You may delete sleep records at any time and revoke microphone
             permission from your device settings.</li>
+      </ul>
+
+      <h3>f. Snore Clip Recording (optional, disabled by default)</h3>
+      <ul>
+        <li><strong>Local storage only</strong>: Only when you explicitly enable
+            "Snore Clip Recording" in the Settings screen, short audio clips of
+            detected snore and sleep-talk events are saved
+            <strong>exclusively on your own device</strong>.</li>
+        <li><strong>No server transmission</strong>: These audio clips are never
+            transmitted to our servers, any cloud service, or any third party.
+            Only metadata (file path strings) is synced for app functionality;
+            the actual audio bytes never leave your device.</li>
+        <li><strong>Scope</strong>: Only segments classified as snore/sleep-talk
+            are saved, approximately 10 seconds each. Your entire sleep duration
+            is not recorded.</li>
+        <li><strong>Automatic deletion</strong>: You can choose a retention period
+            of 7 days, 30 days (default), or indefinite. Expired clips are
+            automatically deleted at the start of the next sleep tracking session.</li>
+        <li><strong>Manual delete and share</strong>: Each clip can be individually
+            deleted or shared to external apps (mail, messengers, etc.) from the
+            acoustic events page. Sharing occurs only when you explicitly initiate it.</li>
+        <li><strong>Disabling</strong>: Turning the toggle off in Settings stops
+            new clips from being saved. Existing clips remain until you delete
+            them or they expire under the retention policy.</li>
       </ul>
     </section>
 
